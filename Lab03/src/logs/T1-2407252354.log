@@ -1,0 +1,11 @@
+240725235426769 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240725235437463 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240725235437479 Request.getData()	INFO: (1) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 157, sec-ch-ua: "Not)A;Brand";v="99", "Brave";v="127", "Chromium";v="127", Content-Type: text/experiment; charset=UTF-8, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-GPC: 1, Accept-Language: en-US,en, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, "from:jeje@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:Un mensaje de prueba\nY otra segunda linea\nY cual es el mensaje;|;"]
+240725235437485 Response.sendData()	INFO: "from:jeje@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:Un mensaje de prueba\nY otra segunda linea\nY cual es el mensaje;|;"
+240725235437490 Response.sendData()	INFO: FROMMMM: jeje@lab03.edu
+240725235437490 Response.sendData()	INFO: TOOOOOO: correo_externo@smtp.celeste.com
+240725235437526 Response.sendData()	INFO: (1) HTTP_request.getLast() : "from:jeje@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:Un mensaje de prueba\nY otra segunda linea\nY cual es el mensaje;|;"
+240725235437550 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK]
+240725235437575 ThreadServer.run()	INFO: (1) > Thread :: Time: 80 milliseconds
+240725235437575 ThreadServer.run()	INFO: (1) > END #
+240725235442588 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

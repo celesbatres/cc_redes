@@ -1,0 +1,25 @@
+240725223710332 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240725223721413 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240725223721426 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 163, sec-ch-ua: "Not)A;Brand";v="99", "Brave";v="127", "Chromium";v="127", Content-Type: text/experiment; charset=UTF-8, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-GPC: 1, Accept-Language: en-US,en, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, "from:curso_cc8@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:Hola Mundo!\nasdflkjasdf\nasdflkjasdlfkj\nasdflkjasd;lf\naslkdfja;|;"]
+240725223721432 Response.sendData()	INFO: "from:curso_cc8@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:Hola Mundo!\nasdflkjasdf\nasdflkjasdlfkj\nasdflkjasd;lf\naslkdfja;|;"
+240725223721434 Response.sendData()	INFO: FROMMMM: curso_cc8@lab03.edu
+240725223721436 Response.sendData()	INFO: TOOOOOO: correo_externo@smtp.celeste.com
+240725223721439 Response.sendData()	INFO: BODYYYY: Lab 03 - SMTP
+Hola Mundo!\nasdflkjasdf\nasdflkjasdlfkj\nasdflkjasd;lf\naslkdfja
+240725223721462 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:Hola Mundo!\nasdflkjasdf\nasdflkjasdlfkj\nasdflkjasd;lf\naslkdfja;|;"
+240725223721477 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK]
+240725223721483 ThreadServer.run()	INFO: (0) > Thread :: Time: 61 milliseconds
+240725223721484 ThreadServer.run()	INFO: (0) > END #
+240725223726485 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240725223754452 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240725223754454 Request.getData()	INFO: (0) request: [POST /sendSMTP HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Content-Length: 100, sec-ch-ua: "Not)A;Brand";v="99", "Brave";v="127", "Chromium";v="127", Content-Type: text/experiment; charset=UTF-8, sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: */*, Sec-GPC: 1, Accept-Language: en-US,en, Origin: http://localhost:1000, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: cors, Sec-Fetch-Dest: empty, Referer: http://localhost:1000/, Accept-Encoding: gzip, deflate, br, zstd, "from:curso_cc8@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:no;|;"]
+240725223754455 Response.sendData()	INFO: "from:curso_cc8@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:no;|;"
+240725223754456 Response.sendData()	INFO: FROMMMM: curso_cc8@lab03.edu
+240725223754456 Response.sendData()	INFO: TOOOOOO: correo_externo@smtp.celeste.com
+240725223754457 Response.sendData()	INFO: BODYYYY: Lab 03 - SMTP
+no
+240725223754459 Response.sendData()	INFO: (0) HTTP_request.getLast() : "from:curso_cc8@lab03.edu;|;to:correo_externo@smtp.celeste.com;|;subject:Lab 03 - SMTP;|;body:no;|;"
+240725223754465 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK]
+240725223754466 ThreadServer.run()	INFO: (0) > Thread :: Time: 13 milliseconds
+240725223754466 ThreadServer.run()	INFO: (0) > END #
+240725223759479 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

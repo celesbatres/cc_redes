@@ -8,7 +8,6 @@ public class SMTPServer {
 
     public static void main(String[] args) {
         (new SMTPServer()).start();
-
     }
 
     public void start() {
@@ -21,8 +20,21 @@ public class SMTPServer {
             e.printStackTrace();
         }
     }
+}
 
-    public void insertDB(String mail_from, String rcpt_to, String data) {
+class SMTPClientHandler extends Thread {
+    private Socket socket;
+    private BufferedReader in;
+    private PrintWriter out;
+    HashMap<String, String> smtp;
+    ArrayList<String> all_smtp = new ArrayList<>();
+
+
+    public SMTPClientHandler(Socket socket) {
+        this.socket = socket;
+    }
+
+    public void insertDB() {
         Connection c = null;
         Statement stmt = null;
 
@@ -34,7 +46,7 @@ public class SMTPServer {
             stmt = c.createStatement();
 
             String sql = "INSERT INTO SMTP_DB (MAIL_FROM, RCPT_TO, DATA) " +
-                    "VALUES (\""+ mail_from +"\", \""+rcpt_to+"\", \""+data+"\");";
+                    "VALUES (\""+ all_smtp.get(0) +"\", \""+all_smtp.get(1)+"\", \""+all_smtp.get(2)+"\");";
 
             stmt.executeUpdate(sql);
 
@@ -44,16 +56,6 @@ public class SMTPServer {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-    }
-}
-
-class SMTPClientHandler extends Thread {
-    private Socket socket;
-    private BufferedReader in;
-    private PrintWriter out;
-
-    public SMTPClientHandler(Socket socket) {
-        this.socket = socket;
     }
 
     @Override
@@ -67,41 +69,52 @@ class SMTPClientHandler extends Thread {
             String line;
             String clientName = "";
 
-
 			String mailFrom = "";
 			String rcptTo = "";
 			String dominio_mailFrom = "";
 			String data = "";
 			String dominio_rcptTo = "";
-
             while ((line = in.readLine()) != null) {
+//                parts.add(line);
+
+//                Aquí es donde recibe, en las lines
+//                Aquí recorrer la linea y guardar los datos en una estructura
+//                Ya, no solamente guardar en variables separadas, sino juntas, ya luego las guardamos en la base de datos, listo
                 System.out.println("-> fromClient: " + line);
                 if (line.startsWith("HELO")) {
-                    clientName = line.substring(5);
+                    clientName = line.substring(5).trim();
                     out.println("250 HELLO " + clientName + ", pleased to meet you");
                 } else if (line.startsWith("MAIL FROM:")) {
                     out.println("250 OK MAIL FROM");
 					mailFrom = line.substring(line.indexOf(':')+2);
 					dominio_mailFrom = mailFrom.substring(mailFrom.indexOf("@")+1);
+                    all_smtp.add(mailFrom);
                 } else if (line.startsWith("RCPT TO:")) {
+
 //					Verificar de donde proviene el rcpt
 					rcptTo = line.substring(line.indexOf(':')+2);
 					dominio_rcptTo = rcptTo.substring(rcptTo.indexOf("@")+1);
                     out.println("250 OK RCPT TO");
-
-
+                    all_smtp.add(rcptTo);
                 } else if (line.equals("DATA")) {
                     out.println("354 End data with <CR><LF>.<CR><LF>");
                     while ((line = in.readLine()) != null) {
+                        data += line+"\n";
                         if (line.equals(".")) {
-
                             out.println("250 OK DATA # <-- ID ROW ");
                             break;
                         }
-						data = line;
-                        System.out.println("Email data: " + line);
                     }
+                    System.out.println("Email data: " + data);
+                    all_smtp.add(data);
+                    System.out.println("dominioo: "+dominio_rcptTo);
+                    if(!dominio_rcptTo.equals("smtp.celeste.com")) {
+                        System.out.println("Bueno, no corresponde a este dominio. lo mando , igual lo guardo");
+//                      SMTPClient smtpClient = new SMTPClient(rcptTo, rcptTo, data);
+                    }
+                    insertDB();
                 } else if (line.equals("QUIT")) {
+
                     out.println("221 Bye " + clientName);
                     clientName = "";
                     break;
@@ -109,12 +122,7 @@ class SMTPClientHandler extends Thread {
                     out.println("500 Unknown command");
                 }
 
-				if(dominio_rcptTo.equals(clientName)) {
-//					Guardar en BD
-				}else{
-//					Separar data en subject y mensaje
-					SMTPClient smtpClient = new SMTPClient(rcptTo, rcptTo, data);
-				}
+
 
 
             }
