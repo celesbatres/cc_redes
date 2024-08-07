@@ -5,30 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24cfbf1f-73c1-48e7-ae7a-f121e994a240" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/__sqlite_jdbc_3_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/__sqlite_jdbc_3_7_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_7_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SMTPClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTPClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SQLite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UpdateDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab04/Lab04.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab04/out/production/Lab04/Lab04.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_SMTP.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SMTPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SMTPClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTPClientHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SMTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SMTP_SERVER.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTP_SERVER.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SQLiteJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SQLiteJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Laboratorio #03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._SMTPClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._SMTPServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._SQLiteJDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._sqlite-jdbc-3.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/docker-data/dms/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/docker-data/dms/._mail-logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/www/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__MACOSX/www/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logs/T0-2407252356.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/logs/T0-2407252356.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logs/T1-2407252356.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/logs/T1-2407252356.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
 }]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2jlH2xGCr4TWvuO1F3bopt0ZFFS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,6 +66,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.IMAPServer.executor": "Run",
+    "Application.SQLiteJDBC.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -45,9 +77,24 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="IMAPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IMAPServer" />
+      <module name="Lab03" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.IMAPServer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,6 +112,11 @@
       <option name="presentableId" value="Default" />
       <updated>1721954540102</updated>
       <workItem from="1721954541146" duration="15413000" />
+      <workItem from="1722458365478" duration="17781000" />
+      <workItem from="1722551641460" duration="14676000" />
+      <workItem from="1722629152546" duration="20895000" />
+      <workItem from="1722909296675" duration="5815000" />
+      <workItem from="1722976110885" duration="16346000" />
     </task>
     <servers />
   </component>

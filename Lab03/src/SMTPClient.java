@@ -29,7 +29,7 @@ public class SMTPClient {
         String data = "From: " + from;
         data+="\nTo: " + to;
 
-        String[] bodyLines = body.split("\\\\n");
+        String[] bodyLines = body.split("\\\\n");//\n
         for (String line : bodyLines) {
             data += "\n"+ line;
         }

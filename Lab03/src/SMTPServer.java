@@ -101,6 +101,7 @@ class SMTPClientHandler extends Thread {
                     while ((line = in.readLine()) != null) {
                         data += line+"\n";
                         if (line.equals(".")) {
+//                            Mensaje de respuesta de
                             out.println("250 OK DATA # <-- ID ROW ");
                             break;
                         }
@@ -108,9 +109,14 @@ class SMTPClientHandler extends Thread {
                     System.out.println("Email data: " + data);
                     all_smtp.add(data);
                     System.out.println("dominioo: "+dominio_rcptTo);
-                    if(!dominio_rcptTo.equals("smtp.celeste.com")) {
-                        System.out.println("Bueno, no corresponde a este dominio. lo mando , igual lo guardo");
-//                      SMTPClient smtpClient = new SMTPClient(rcptTo, rcptTo, data);
+                    if(!dominio_rcptTo.equals("celeste.com")) {
+                      System.out.println("Bueno, no corresponde a este dominio. lo mando , igual lo guardo");
+
+//                      TODO: PROBAR CON OTRO SERVER
+//                      SMTPClient smtp = new SMTPClient(dominio_rcptTo, 25);
+//                      smtp.start();
+//                      smtp.sendMessage(mailFrom, rcptTo, data);
+
                     }
                     insertDB();
                 } else if (line.equals("QUIT")) {
