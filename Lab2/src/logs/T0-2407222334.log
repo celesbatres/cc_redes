@@ -1,0 +1,50 @@
+240722233430429 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240722233435396 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240722233435406 Request.getData()	INFO: MENSAJE:[17] /test01/index.html
+240722233435414 Request.getData()	INFO: MENSAJE:= 
+240722233435416 Response.sendData()	INFO: request: 0GET /test01/index.html HTTP/1.1 
+240722233435416 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240722233435422 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240722233435426 Response.sendData()	INFO: request: 3 Cache-Control: max-age=0 
+240722233435431 Response.sendData()	INFO: request: 4 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240722233435431 Response.sendData()	INFO: request: 5 sec-ch-ua-mobile: ?0 
+240722233435431 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240722233435431 Response.sendData()	INFO: request: 7 Upgrade-Insecure-Requests: 1 
+240722233435431 Response.sendData()	INFO: request: 8 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240722233435431 Response.sendData()	INFO: request: 9 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 
+240722233435431 Response.sendData()	INFO: request: 10 Sec-GPC: 1 
+240722233435436 Response.sendData()	INFO: request: 11 Accept-Language: en-US,en 
+240722233435436 Response.sendData()	INFO: request: 12 Sec-Fetch-Site: none 
+240722233435436 Response.sendData()	INFO: request: 13 Sec-Fetch-Mode: navigate 
+240722233435436 Response.sendData()	INFO: request: 14 Sec-Fetch-User: ?1 
+240722233435439 Response.sendData()	INFO: request: 15 Sec-Fetch-Dest: document 
+240722233435439 Response.sendData()	INFO: request: 16 Accept-Encoding: gzip, deflate, br, zstd 
+240722233435439 Response.sendData()	INFO: request: 17 
+240722233435439 Response.sendData()	INFO: RESPUESTAGET /test01/index.html HTTP/1.1 
+240722233435439 Response.sendData()	INFO: PATHH:  /test01/index.html
+240722233435634 Response.sendData()	INFO: (0) response: [HTTP/1.1 404 Not Found, Content-Type: text/html, Content-Length: 4241, ]
+240722233435634 Response.sendData()	INFO: (0) request: GET /test01/index.html HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: none || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Accept-Encoding: gzip, deflate, br, zstd || 
+240722233435658 ThreadServer.run()	INFO: (0) > Thread :: Time: 252 milliseconds
+240722233435675 ThreadServer.run()	INFO: (0) > END #
+240722233440700 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240722233440701 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240722233440702 Request.getData()	INFO: MENSAJE:[15] /test01/images/fisicc.png
+240722233440702 Request.getData()	INFO: MENSAJE:= 
+240722233440702 Response.sendData()	INFO: request: 0GET /test01/images/fisicc.png HTTP/1.1 
+240722233440702 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240722233440702 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240722233440707 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240722233440708 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240722233440708 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240722233440708 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240722233440711 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240722233440711 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240722233440713 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240722233440713 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240722233440713 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240722233440713 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240722233440716 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/test01/index.html 
+240722233440716 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240722233440716 Response.sendData()	INFO: request: 15 
+240722233440719 Response.sendData()	INFO: RESPUESTAGET /test01/images/fisicc.png HTTP/1.1 
+240722233440721 Response.sendData()	INFO: PATHH:  /test01/images/fisicc.png

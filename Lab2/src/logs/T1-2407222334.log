@@ -1,0 +1,103 @@
+240722233430429 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240722233435515 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240722233435520 Request.getData()	INFO: MENSAJE:[15] /test01/images/galileo.jpg
+240722233435521 Request.getData()	INFO: MENSAJE:= 
+240722233435528 Response.sendData()	INFO: request: 0GET /test01/images/galileo.jpg HTTP/1.1 
+240722233435532 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240722233435533 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240722233435533 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240722233435537 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240722233435537 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240722233435537 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240722233435537 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240722233435537 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240722233435537 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240722233435537 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240722233435537 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240722233435545 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240722233435546 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/test01/index.html 
+240722233435546 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240722233435546 Response.sendData()	INFO: request: 15 
+240722233435546 Response.sendData()	INFO: RESPUESTAGET /test01/images/galileo.jpg HTTP/1.1 
+240722233435546 Response.sendData()	INFO: PATHH:  /test01/images/galileo.jpg
+240722233442075 Response.sendData()	INFO: (1) response: [HTTP/1.1 404 Not Found, Content-Type: image/jpeg, Content-Length: 147169, ]
+240722233442090 Response.sendData()	INFO: (1) request: GET /test01/images/galileo.jpg HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/index.html || Accept-Encoding: gzip, deflate, br, zstd || 
+240722233442131 ThreadServer.run()	INFO: (1) > Thread :: Time: 6616 milliseconds
+240722233442160 ThreadServer.run()	INFO: (1) > END #
+240722233447207 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240722233459017 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240722233459022 Request.getData()	INFO: MENSAJE:[17] /
+240722233459022 Request.getData()	INFO: MENSAJE:= 
+240722233459022 Response.sendData()	INFO: request: 0GET / HTTP/1.1 
+240722233459022 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240722233459026 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240722233459026 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240722233459027 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240722233459027 Response.sendData()	INFO: request: 5 sec-ch-ua-platform: "Windows" 
+240722233459027 Response.sendData()	INFO: request: 6 Upgrade-Insecure-Requests: 1 
+240722233459027 Response.sendData()	INFO: request: 7 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240722233459027 Response.sendData()	INFO: request: 8 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 
+240722233459030 Response.sendData()	INFO: request: 9 Sec-GPC: 1 
+240722233459030 Response.sendData()	INFO: request: 10 Accept-Language: en-US,en 
+240722233459030 Response.sendData()	INFO: request: 11 Sec-Fetch-Site: same-origin 
+240722233459030 Response.sendData()	INFO: request: 12 Sec-Fetch-Mode: navigate 
+240722233459030 Response.sendData()	INFO: request: 13 Sec-Fetch-User: ?1 
+240722233459030 Response.sendData()	INFO: request: 14 Sec-Fetch-Dest: document 
+240722233459030 Response.sendData()	INFO: request: 15 Referer: http://localhost:1000/test01/index.html 
+240722233459030 Response.sendData()	INFO: request: 16 Accept-Encoding: gzip, deflate, br, zstd 
+240722233459030 Response.sendData()	INFO: request: 17 
+240722233459037 Response.sendData()	INFO: RESPUESTAGET / HTTP/1.1 
+240722233459037 Response.sendData()	INFO: PATHH:  /
+240722233459038 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: null, Content-Length: 0, ]
+240722233459038 Response.sendData()	INFO: (1) request: GET / HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test01/index.html || Accept-Encoding: gzip, deflate, br, zstd || 
+240722233459038 ThreadServer.run()	INFO: (1) > Thread :: Time: 16 milliseconds
+240722233459047 ThreadServer.run()	INFO: (1) > END #
+240722233504058 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240722233506003 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240722233506006 Request.getData()	INFO: MENSAJE:[16] /test01/index.html
+240722233506006 Request.getData()	INFO: MENSAJE:= 
+240722233506008 Response.sendData()	INFO: request: 0GET /test01/index.html HTTP/1.1 
+240722233506008 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240722233506008 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240722233506008 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240722233506008 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240722233506013 Response.sendData()	INFO: request: 5 sec-ch-ua-platform: "Windows" 
+240722233506013 Response.sendData()	INFO: request: 6 Upgrade-Insecure-Requests: 1 
+240722233506014 Response.sendData()	INFO: request: 7 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240722233506014 Response.sendData()	INFO: request: 8 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 
+240722233506014 Response.sendData()	INFO: request: 9 Sec-GPC: 1 
+240722233506014 Response.sendData()	INFO: request: 10 Accept-Language: en-US,en 
+240722233506014 Response.sendData()	INFO: request: 11 Sec-Fetch-Site: none 
+240722233506014 Response.sendData()	INFO: request: 12 Sec-Fetch-Mode: navigate 
+240722233506018 Response.sendData()	INFO: request: 13 Sec-Fetch-User: ?1 
+240722233506018 Response.sendData()	INFO: request: 14 Sec-Fetch-Dest: document 
+240722233506018 Response.sendData()	INFO: request: 15 Accept-Encoding: gzip, deflate, br, zstd 
+240722233506018 Response.sendData()	INFO: request: 16 
+240722233506018 Response.sendData()	INFO: RESPUESTAGET /test01/index.html HTTP/1.1 
+240722233506018 Response.sendData()	INFO: PATHH:  /test01/index.html
+240722233506148 Response.sendData()	INFO: (1) response: [HTTP/1.1 404 Not Found, Content-Type: text/html, Content-Length: 4241, ]
+240722233506150 Response.sendData()	INFO: (1) request: GET /test01/index.html HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: none || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Accept-Encoding: gzip, deflate, br, zstd || 
+240722233506150 ThreadServer.run()	INFO: (1) > Thread :: Time: 144 milliseconds
+240722233506155 ThreadServer.run()	INFO: (1) > END #
+240722233511160 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240722233511161 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240722233511161 Request.getData()	INFO: MENSAJE:[15] /test01/images/galileo.jpg
+240722233511161 Request.getData()	INFO: MENSAJE:= 
+240722233511161 Response.sendData()	INFO: request: 0GET /test01/images/galileo.jpg HTTP/1.1 
+240722233511161 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240722233511161 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240722233511161 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240722233511170 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240722233511170 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240722233511170 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240722233511170 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240722233511170 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240722233511170 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240722233511170 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240722233511180 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240722233511180 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240722233511180 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/test01/index.html 
+240722233511180 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240722233511180 Response.sendData()	INFO: request: 15 
+240722233511180 Response.sendData()	INFO: RESPUESTAGET /test01/images/galileo.jpg HTTP/1.1 
+240722233511186 Response.sendData()	INFO: PATHH:  /test01/images/galileo.jpg

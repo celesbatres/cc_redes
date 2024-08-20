@@ -1,0 +1,21 @@
+240718200309998 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718200313183 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718200313183 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718200313183 Request.getData()	INFO: MENSAJE:= 
+240718200313183 Response.sendData()	INFO: request: 0GET /favicon.ico HTTP/1.1 
+240718200313189 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240718200313189 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240718200313189 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240718200313189 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240718200313193 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240718200313193 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240718200313193 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240718200313193 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240718200313193 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240718200313193 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240718200313198 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240718200313198 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240718200313198 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/arch.html 
+240718200313198 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240718200313198 Response.sendData()	INFO: request: 15 
+240718200313198 Response.sendData()	INFO: RESPUESTAGET /favicon.ico HTTP/1.1 

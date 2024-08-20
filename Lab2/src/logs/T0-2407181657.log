@@ -1,0 +1,38 @@
+240718165724612 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718165724638 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718165724646 Request.getData()	INFO: MENSAJE:[17] /test01/index.html
+240718165724646 Request.getData()	INFO: MENSAJE:[17] /test01/index.html
+240718165724646 Request.getData()	INFO: MSGGGGtext/html
+240718165731049 Response.sendData()	INFO:  Host: localhost:1000 
+240718165731053 Response.sendData()	INFO: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab HTTP</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.8em;
+        }
+     </style>
+</head>
+<body>
+    <h1>Pruebas de Web Server</h1>
+    <p>Test 1: <a href="test01/">HTML Simple con Media</a></p>
+    <p>Test 2: <a href="test02/">Formularios GET/POST con enctype</a></p>
+    <p>Test 3: <a href="test03/">Página Web Completa</a></p>
+    <br>
+    <p>
+        {fieldTest_DEMO}
+    </p>
+</body>
+</html>
+
+240718165731061 ThreadServer.run()	INFO: (0) > Thread :: Time: 6423 milliseconds
+240718165731061 ThreadServer.run()	INFO: (0) > END #
+240718165736074 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718165740315 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718165740317 Request.getData()	INFO: MENSAJE:[17] /test01/index.html
+240718165740318 Request.getData()	INFO: MENSAJE:[17] /test01/index.html
+240718165740320 Request.getData()	INFO: MSGGGGtext/html

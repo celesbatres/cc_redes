@@ -1,0 +1,6 @@
+240718190839714 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718190859129 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718190859130 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718190859131 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718190859131 Request.getData()	INFO: (0) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-GPC: 1, Accept-Language: en-US,en, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/arch.html, Accept-Encoding: gzip, deflate, br, zstd, ]
+240718190859133 Response.sendData()	INFO: RESPUESTAGET /favicon.ico HTTP/1.1 

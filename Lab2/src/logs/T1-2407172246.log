@@ -1,0 +1,8 @@
+240717224628386 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240717224631137 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240717224631145 Request.getData()	INFO: (1) request: [GET /favicon.ico HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126", sec-ch-ua-mobile: ?0, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, sec-ch-ua-platform: "Windows", Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, Sec-GPC: 1, Accept-Language: en-US,en, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: no-cors, Sec-Fetch-Dest: image, Referer: http://localhost:1000/test01/, Accept-Encoding: gzip, deflate, br, zstd, ]
+240717224631145 Response.sendData()	INFO: /favicon.ico
+240717224631145 Response.sendData()	INFO: HTTP/1.1
+240717224631153 ThreadServer.run()	INFO: (1) > Thread :: Time: 8 milliseconds
+240717224631153 ThreadServer.run()	INFO: (1) > END #
+240717224636165 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

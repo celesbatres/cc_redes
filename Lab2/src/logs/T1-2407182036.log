@@ -1,0 +1,3 @@
+240718203653567 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718203704044 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718203704056 Request.getData()	INFO: MENSAJE:[17] /arch.html

@@ -1,0 +1,28 @@
+240724190830268 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240724190835662 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240724190835670 Request.getData()	INFO: MENSAJE:[16] /index.html
+240724190835670 Request.getData()	INFO: MENSAJE:= 
+240724190835675 Response.sendData()	INFO: request: 0GET /index.html HTTP/1.1 
+240724190835675 Response.sendData()	INFO: request: 1 Host: localhost:1030 
+240724190835678 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240724190835678 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not)A;Brand";v="99", "Brave";v="127", "Chromium";v="127" 
+240724190835678 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240724190835678 Response.sendData()	INFO: request: 5 sec-ch-ua-platform: "Windows" 
+240724190835678 Response.sendData()	INFO: request: 6 Upgrade-Insecure-Requests: 1 
+240724190835678 Response.sendData()	INFO: request: 7 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 
+240724190835686 Response.sendData()	INFO: request: 8 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 
+240724190835686 Response.sendData()	INFO: request: 9 Sec-GPC: 1 
+240724190835686 Response.sendData()	INFO: request: 10 Accept-Language: en-US,en 
+240724190835686 Response.sendData()	INFO: request: 11 Sec-Fetch-Site: none 
+240724190835686 Response.sendData()	INFO: request: 12 Sec-Fetch-Mode: navigate 
+240724190835686 Response.sendData()	INFO: request: 13 Sec-Fetch-User: ?1 
+240724190835686 Response.sendData()	INFO: request: 14 Sec-Fetch-Dest: document 
+240724190835686 Response.sendData()	INFO: request: 15 Accept-Encoding: gzip, deflate, br, zstd 
+240724190835686 Response.sendData()	INFO: request: 16 
+240724190835686 Response.sendData()	INFO: RESPUESTAGET /index.html HTTP/1.1 
+240724190835694 Response.sendData()	INFO: PATHH:  /index.html
+240724190835710 Response.sendData()	INFO: (0) response: [HTTP/1.1 404 Not Found, Content-Type: text/html, Content-Length: 0, ]
+240724190835710 Response.sendData()	INFO: (0) request: GET /index.html HTTP/1.1 || Host: localhost:1030 || Connection: keep-alive || sec-ch-ua: "Not)A;Brand";v="99", "Brave";v="127", "Chromium";v="127" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: none || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Accept-Encoding: gzip, deflate, br, zstd || 
+240724190835718 ThreadServer.run()	INFO: (0) > Thread :: Time: 48 milliseconds
+240724190835722 ThreadServer.run()	INFO: (0) > END #
+240724190840731 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

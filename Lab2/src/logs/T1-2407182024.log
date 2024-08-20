@@ -1,0 +1,55 @@
+240718202427111 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718202431347 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718202431356 Request.getData()	INFO: MENSAJE:[17] /arch.html
+240718202431356 Request.getData()	INFO: MENSAJE:= 
+240718202431356 Response.sendData()	INFO: request: 0GET /arch.html HTTP/1.1 
+240718202431356 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240718202431356 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240718202431356 Response.sendData()	INFO: request: 3 Cache-Control: max-age=0 
+240718202431364 Response.sendData()	INFO: request: 4 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240718202431364 Response.sendData()	INFO: request: 5 sec-ch-ua-mobile: ?0 
+240718202431364 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240718202431364 Response.sendData()	INFO: request: 7 Upgrade-Insecure-Requests: 1 
+240718202431364 Response.sendData()	INFO: request: 8 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240718202431364 Response.sendData()	INFO: request: 9 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 
+240718202431364 Response.sendData()	INFO: request: 10 Sec-GPC: 1 
+240718202431372 Response.sendData()	INFO: request: 11 Accept-Language: en-US,en 
+240718202431372 Response.sendData()	INFO: request: 12 Sec-Fetch-Site: none 
+240718202431372 Response.sendData()	INFO: request: 13 Sec-Fetch-Mode: navigate 
+240718202431372 Response.sendData()	INFO: request: 14 Sec-Fetch-User: ?1 
+240718202431372 Response.sendData()	INFO: request: 15 Sec-Fetch-Dest: document 
+240718202431372 Response.sendData()	INFO: request: 16 Accept-Encoding: gzip, deflate, br, zstd 
+240718202431372 Response.sendData()	INFO: request: 17 
+240718202431372 Response.sendData()	INFO: RESPUESTAGET /arch.html HTTP/1.1 
+240718202431380 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: text/html, ClaseCC8: Alumnos, Content-Length: 18, , <b>Hola Mundo!</b>]
+240718202431380 Response.sendData()	INFO: (1) request: GET /arch.html HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: none || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Accept-Encoding: gzip, deflate, br, zstd || 
+240718202431396 ThreadServer.run()	INFO: (1) > Thread :: Time: 38 milliseconds
+240718202431397 ThreadServer.run()	INFO: (1) > END #
+240718202436401 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718202458516 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718202458518 Request.getData()	INFO: MENSAJE:[17] /test01/test01/test01/test01/test01/test01/test01/test01/test01/
+240718202458519 Request.getData()	INFO: MENSAJE:= 
+240718202458521 Response.sendData()	INFO: request: 0GET /test01/test01/test01/test01/test01/test01/test01/test01/test01/ HTTP/1.1 
+240718202458521 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240718202458521 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240718202458521 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240718202458521 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240718202458521 Response.sendData()	INFO: request: 5 sec-ch-ua-platform: "Windows" 
+240718202458521 Response.sendData()	INFO: request: 6 Upgrade-Insecure-Requests: 1 
+240718202458521 Response.sendData()	INFO: request: 7 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240718202458529 Response.sendData()	INFO: request: 8 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 
+240718202458529 Response.sendData()	INFO: request: 9 Sec-GPC: 1 
+240718202458529 Response.sendData()	INFO: request: 10 Accept-Language: en-US,en 
+240718202458529 Response.sendData()	INFO: request: 11 Sec-Fetch-Site: same-origin 
+240718202458529 Response.sendData()	INFO: request: 12 Sec-Fetch-Mode: navigate 
+240718202458529 Response.sendData()	INFO: request: 13 Sec-Fetch-User: ?1 
+240718202458529 Response.sendData()	INFO: request: 14 Sec-Fetch-Dest: document 
+240718202458537 Response.sendData()	INFO: request: 15 Referer: http://localhost:1000/test01/test01/test01/test01/test01/test01/test01/test01/ 
+240718202458537 Response.sendData()	INFO: request: 16 Accept-Encoding: gzip, deflate, br, zstd 
+240718202458537 Response.sendData()	INFO: request: 17 
+240718202458537 Response.sendData()	INFO: RESPUESTAGET /test01/test01/test01/test01/test01/test01/test01/test01/test01/ HTTP/1.1 
+240718202458537 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: null, ClaseCC8: Alumnos, Content-Length: 0, , ]
+240718202458537 Response.sendData()	INFO: (1) request: GET /test01/test01/test01/test01/test01/test01/test01/test01/test01/ HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test01/test01/test01/test01/test01/test01/test01/test01/ || Accept-Encoding: gzip, deflate, br, zstd || 
+240718202458545 ThreadServer.run()	INFO: (1) > Thread :: Time: 27 milliseconds
+240718202458546 ThreadServer.run()	INFO: (1) > END #
+240718202503561 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

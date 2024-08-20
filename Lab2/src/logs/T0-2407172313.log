@@ -1,0 +1,21 @@
+240717231344824 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240717231353220 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240717231353224 Request.getData()	INFO: GET /test01/ HTTP/1.1
+240717231353227 Request.getData()	INFO: Host: localhost:1000
+240717231353227 Request.getData()	INFO: Connection: keep-alive
+240717231353231 Request.getData()	INFO: Cache-Control: max-age=0
+240717231353233 Request.getData()	INFO: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"
+240717231353233 Request.getData()	INFO: sec-ch-ua-mobile: ?0
+240717231353233 Request.getData()	INFO: sec-ch-ua-platform: "Windows"
+240717231353233 Request.getData()	INFO: Upgrade-Insecure-Requests: 1
+240717231353239 Request.getData()	INFO: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+240717231353239 Request.getData()	INFO: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+240717231353239 Request.getData()	INFO: Sec-GPC: 1
+240717231353239 Request.getData()	INFO: Accept-Language: en-US,en
+240717231353247 Request.getData()	INFO: Sec-Fetch-Site: none
+240717231353247 Request.getData()	INFO: Sec-Fetch-Mode: navigate
+240717231353247 Request.getData()	INFO: Sec-Fetch-User: ?1
+240717231353247 Request.getData()	INFO: Sec-Fetch-Dest: document
+240717231353247 Request.getData()	INFO: Accept-Encoding: gzip, deflate, br, zstd
+240717231353263 Request.getData()	INFO: (0) request: [GET /test01/ HTTP/1.1, Host: localhost:1000, Connection: keep-alive, Cache-Control: max-age=0, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8, Sec-GPC: 1, Accept-Language: en-US,en, Sec-Fetch-Site: none, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Accept-Encoding: gzip, deflate, br, zstd, ]
+240717231353271 Response.sendData()	INFO:  Host: localhost:1000 

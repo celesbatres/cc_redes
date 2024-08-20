@@ -1,0 +1,34 @@
+240718130547507 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718130600588 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718130600596 Request.getData()	INFO: MENSAJE: 0
+240718130600596 Request.getData()	INFO: MENSAJE: GET /test01 HTTP/1.1
+240718130600596 Request.getData()	INFO: MENSAJE: 0
+240718130600596 Request.getData()	INFO: MENSAJE: Host: localhost:1000
+240718130600596 Request.getData()	INFO: MENSAJE: 0
+240718130600596 Request.getData()	INFO: MENSAJE: Connection: keep-alive
+240718130600604 Request.getData()	INFO: MENSAJE: 0
+240718130600604 Request.getData()	INFO: MENSAJE: sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"
+240718130600604 Request.getData()	INFO: MENSAJE: 0
+240718130600604 Request.getData()	INFO: MENSAJE: sec-ch-ua-mobile: ?0
+240718130600604 Request.getData()	INFO: MENSAJE: 0
+240718130600607 Request.getData()	INFO: MENSAJE: sec-ch-ua-platform: "Windows"
+240718130600607 Request.getData()	INFO: MENSAJE: 0
+240718130600609 Request.getData()	INFO: MENSAJE: Upgrade-Insecure-Requests: 1
+240718130600610 Request.getData()	INFO: MENSAJE: 0
+240718130600610 Request.getData()	INFO: MENSAJE: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+240718130600610 Request.getData()	INFO: MENSAJE: 0
+240718130600612 Request.getData()	INFO: MENSAJE: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+240718130600613 Request.getData()	INFO: MENSAJE: 0
+240718130600613 Request.getData()	INFO: MENSAJE: Sec-GPC: 1
+240718130600613 Request.getData()	INFO: MENSAJE: 0
+240718130600613 Request.getData()	INFO: MENSAJE: Accept-Language: en-US,en
+240718130600613 Request.getData()	INFO: MENSAJE: 0
+240718130600613 Request.getData()	INFO: MENSAJE: Sec-Fetch-Site: none
+240718130600613 Request.getData()	INFO: MENSAJE: 0
+240718130600613 Request.getData()	INFO: MENSAJE: Sec-Fetch-Mode: navigate
+240718130600613 Request.getData()	INFO: MENSAJE: 0
+240718130600613 Request.getData()	INFO: MENSAJE: Sec-Fetch-User: ?1
+240718130600613 Request.getData()	INFO: MENSAJE: 0
+240718130600613 Request.getData()	INFO: MENSAJE: Sec-Fetch-Dest: document
+240718130600613 Request.getData()	INFO: MENSAJE: 0
+240718130600613 Request.getData()	INFO: MENSAJE: Accept-Encoding: gzip, deflate, br, zstd

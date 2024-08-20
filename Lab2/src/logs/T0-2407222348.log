@@ -1,0 +1,27 @@
+240722234803571 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240722234807861 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240722234807864 Request.getData()	INFO: MENSAJE:[15] /test01/images/galileo.jpg
+240722234807865 Request.getData()	INFO: MENSAJE:= 
+240722234807868 Response.sendData()	INFO: request: 0GET /test01/images/galileo.jpg HTTP/1.1 
+240722234807868 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240722234807868 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240722234807868 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240722234807872 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240722234807872 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240722234807873 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240722234807873 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240722234807873 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240722234807873 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240722234807875 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240722234807875 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240722234807876 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240722234807878 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/test01/index.html 
+240722234807879 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240722234807879 Response.sendData()	INFO: request: 15 
+240722234807881 Response.sendData()	INFO: RESPUESTAGET /test01/images/galileo.jpg HTTP/1.1 
+240722234807882 Response.sendData()	INFO: PATHH:  /test01/images/galileo.jpg
+240722234813421 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK, Content-Type: image/jpeg, Content-Length: 147169, ]
+240722234813429 Response.sendData()	INFO: (0) request: GET /test01/images/galileo.jpg HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/test01/index.html || Accept-Encoding: gzip, deflate, br, zstd || 
+240722234813454 ThreadServer.run()	INFO: (0) > Thread :: Time: 5590 milliseconds
+240722234813494 ThreadServer.run()	INFO: (0) > END #
+240722234818525 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

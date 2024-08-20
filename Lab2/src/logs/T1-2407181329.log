@@ -1,0 +1,96 @@
+240718132915154 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718132915173 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718132915175 Request.getData()	INFO: MENSAJE:[0] GET /test01/index.html HTTP/1.1
+240718132915182 Request.getData()	INFO: MENSAJE:[1] Host: localhost:1000
+240718132915182 Request.getData()	INFO: MENSAJE:[2] Connection: keep-alive
+240718132915182 Request.getData()	INFO: MENSAJE:[3] Cache-Control: max-age=0
+240718132915182 Request.getData()	INFO: MENSAJE:[4] sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"
+240718132915182 Request.getData()	INFO: MENSAJE:[5] sec-ch-ua-mobile: ?0
+240718132915182 Request.getData()	INFO: MENSAJE:[6] sec-ch-ua-platform: "Windows"
+240718132915190 Request.getData()	INFO: MENSAJE:[7] Upgrade-Insecure-Requests: 1
+240718132915190 Request.getData()	INFO: MENSAJE:[8] User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+240718132915190 Request.getData()	INFO: MENSAJE:[9] Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+240718132915190 Request.getData()	INFO: MENSAJE:[10] Sec-GPC: 1
+240718132915190 Request.getData()	INFO: MENSAJE:[11] Accept-Language: en-US,en
+240718132915190 Request.getData()	INFO: MENSAJE:[12] Sec-Fetch-Site: none
+240718132915190 Request.getData()	INFO: MENSAJE:[13] Sec-Fetch-Mode: navigate
+240718132915190 Request.getData()	INFO: MENSAJE:[14] Sec-Fetch-Dest: document
+240718132915190 Request.getData()	INFO: MENSAJE:[15] Accept-Encoding: gzip, deflate, br, zstd
+240718132915190 Request.getData()	INFO: MSGGGGGET /test01/index.html HTTP/1.1
+240718132928203 Response.sendData()	INFO:  Host: localhost:1000 
+240718132928208 Response.sendData()	INFO: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab HTTP</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.8em;
+        }
+     </style>
+</head>
+<body>
+    <h1>Pruebas de Web Server</h1>
+    <p>Test 1: <a href="test01/">HTML Simple con Media</a></p>
+    <p>Test 2: <a href="test02/">Formularios GET/POST con enctype</a></p>
+    <p>Test 3: <a href="test03/">Página Web Completa</a></p>
+    <br>
+    <p>
+        {fieldTest_DEMO}
+    </p>
+</body>
+</html>
+
+240718132928216 ThreadServer.run()	INFO: (1) > Thread :: Time: 13041 milliseconds
+240718132928224 ThreadServer.run()	INFO: (1) > END #
+240718132933226 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718133137584 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718133137584 Request.getData()	INFO: MENSAJE:[0] GET /test01/index.html HTTP/1.1
+240718133137584 Request.getData()	INFO: MENSAJE:[1] Host: localhost:1000
+240718133137591 Request.getData()	INFO: MENSAJE:[2] Connection: keep-alive
+240718133137591 Request.getData()	INFO: MENSAJE:[3] Cache-Control: max-age=0
+240718133137591 Request.getData()	INFO: MENSAJE:[4] sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"
+240718133137591 Request.getData()	INFO: MENSAJE:[5] sec-ch-ua-mobile: ?0
+240718133137591 Request.getData()	INFO: MENSAJE:[6] sec-ch-ua-platform: "Windows"
+240718133137591 Request.getData()	INFO: MENSAJE:[7] Upgrade-Insecure-Requests: 1
+240718133137600 Request.getData()	INFO: MENSAJE:[8] User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+240718133137600 Request.getData()	INFO: MENSAJE:[9] Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+240718133137600 Request.getData()	INFO: MENSAJE:[10] Sec-GPC: 1
+240718133137600 Request.getData()	INFO: MENSAJE:[11] Accept-Language: en-US,en
+240718133137600 Request.getData()	INFO: MENSAJE:[12] Sec-Fetch-Site: none
+240718133137600 Request.getData()	INFO: MENSAJE:[13] Sec-Fetch-Mode: navigate
+240718133137607 Request.getData()	INFO: MENSAJE:[14] Sec-Fetch-User: ?1
+240718133137607 Request.getData()	INFO: MENSAJE:[15] Sec-Fetch-Dest: document
+240718133137607 Request.getData()	INFO: MENSAJE:[16] Accept-Encoding: gzip, deflate, br, zstd
+240718133137607 Request.getData()	INFO: MSGGGGGET /test01/index.html HTTP/1.1
+240718133141508 Response.sendData()	INFO:  Host: localhost:1000 
+240718133141510 Response.sendData()	INFO: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab HTTP</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.8em;
+        }
+     </style>
+</head>
+<body>
+    <h1>Pruebas de Web Server</h1>
+    <p>Test 1: <a href="test01/">HTML Simple con Media</a></p>
+    <p>Test 2: <a href="test02/">Formularios GET/POST con enctype</a></p>
+    <p>Test 3: <a href="test03/">Página Web Completa</a></p>
+    <br>
+    <p>
+        {fieldTest_DEMO}
+    </p>
+</body>
+</html>
+
+240718133141515 ThreadServer.run()	INFO: (1) > Thread :: Time: 3931 milliseconds
+240718161600701 ThreadServer.run()	INFO: (1) > END #
+240718161605774 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

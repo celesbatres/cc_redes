@@ -1,0 +1,35 @@
+240718172054815 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718172100355 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718172100366 Request.getData()	INFO: MENSAJE:[17] /test01/test01/test01/test01/test01/
+240718172100366 Request.getData()	INFO: MENSAJE:[17] /test01/test01/test01/test01/test01/
+240718172100366 Request.getData()	INFO: (1) request: [GET /test01/test01/test01/test01/test01/ HTTP/1.1, Host: localhost:1000, Connection: keep-alive, sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126", sec-ch-ua-mobile: ?0, sec-ch-ua-platform: "Windows", Upgrade-Insecure-Requests: 1, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8, Sec-GPC: 1, Accept-Language: en-US,en, Sec-Fetch-Site: same-origin, Sec-Fetch-Mode: navigate, Sec-Fetch-User: ?1, Sec-Fetch-Dest: document, Referer: http://localhost:1000/test01/test01/test01/test01/, Accept-Encoding: gzip, deflate, br, zstd, ]
+240718172100374 Response.sendData()	INFO: GET /test01/test01/test01/test01/test01/ HTTP/1.1 
+240718172100374 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: text/html, ClaseCC8: Alumnos, Content-Length: 638, , <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab HTTP</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.8em;
+        }
+     </style>
+</head>
+<body>
+    <h1>Pruebas de Web Server</h1>
+    <p>Test 1: <a href="test01/">HTML Simple con Media</a></p>
+    <p>Test 2: <a href="test02/">Formularios GET/POST con enctype</a></p>
+    <p>Test 3: <a href="test03/">Página Web Completa</a></p>
+    <br>
+    <p>
+        El servidor cambió esto y agregó un número aleatorio: 73
+    </p>
+</body>
+</html>
+]
+240718172100382 Response.sendData()	INFO: (1) request: GET /test01/test01/test01/test01/test01/ HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Referer: http://localhost:1000/test01/test01/test01/test01/ || Accept-Encoding: gzip, deflate, br, zstd || 
+240718172100393 ThreadServer.run()	INFO: (1) > Thread :: Time: 24 milliseconds
+240718172100393 ThreadServer.run()	INFO: (1) > END #
+240718172105403 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

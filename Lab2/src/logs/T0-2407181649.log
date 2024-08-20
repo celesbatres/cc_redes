@@ -1,0 +1,5 @@
+240718164959738 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718164959847 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718164959855 Request.getData()	INFO: MENSAJE:[17] /test01/index.html
+240718164959863 Request.getData()	INFO: MENSAJE:[17] /test01/index.html
+240718164959863 Request.getData()	INFO: MSGGGGtext/html

@@ -1,0 +1,5 @@
+240718200159389 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718200203297 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718200203300 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718200203303 Request.getData()	INFO: MENSAJE:= 
+240718200203304 Response.sendData()	INFO: RESPUESTAGET /favicon.ico HTTP/1.1 

@@ -4,38 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24cfbf1f-73c1-48e7-ae7a-f121e994a240" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SQLite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UpdateDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab04/Lab04.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab04/out/production/Lab04/Lab04.iml" afterDir="false" />
+    <list default="true" id="24cfbf1f-73c1-48e7-ae7a-f121e994a240" name="Changes" comment="Agregando a lab 3 - lab 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab_SMTP.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SMTPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTPClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SMTPClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTPClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SMTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTPServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SMTP_SERVER.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/SMTP_SERVER.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SQLiteJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SQLiteJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Laboratorio #03.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Request.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Response.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._SMTPClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._SMTPServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._SQLiteJDBC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/._sqlite-jdbc-3.7.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/docker-data/dms/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/docker-data/dms/._mail-logs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/www/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__MACOSX/www/._index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logs/T0-2407252356.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/logs/T0-2407252356.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logs/T1-2407252356.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/logs/T1-2407252356.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +22,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;celestebatres&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/celestebatres/cc_redes.git&quot;,
+    &quot;accountId&quot;: &quot;4c05e728-defa-45ad-b95f-35679ad4e01c&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -64,23 +46,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.IMAPServer.executor": "Run",
-    "Application.SQLiteJDBC.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.IMAPServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SQLiteJDBC.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="IMAPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="IMAPServer" />
@@ -116,11 +98,28 @@
       <workItem from="1722551641460" duration="14676000" />
       <workItem from="1722629152546" duration="20895000" />
       <workItem from="1722909296675" duration="5815000" />
-      <workItem from="1722976110885" duration="16346000" />
+      <workItem from="1722976110885" duration="16475000" />
+      <workItem from="1723061764753" duration="2000" />
+      <workItem from="1723071762171" duration="3918000" />
+      <workItem from="1723315955051" duration="595000" />
+      <workItem from="1723492343568" duration="6000" />
     </task>
+    <task id="LOCAL-00001" summary="Agregando a lab 3 - lab 4">
+      <option name="closed" value="true" />
+      <created>1723051690717</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723051690717</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Agregando a lab 3 - lab 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregando a lab 3 - lab 4" />
   </component>
 </project>

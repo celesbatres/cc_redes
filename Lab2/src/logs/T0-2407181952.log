@@ -1,0 +1,10 @@
+240718195231280 ThreadServer.run()	INFO: (0) > Thread waiting for new client....
+240718195238688 ThreadServer.run()	INFO: (0) > Thread Accepting connection >
+240718195246836 Request.getData()	INFO: MENSAJE:[17] /arch.html
+240718195246837 Request.getData()	INFO: MENSAJE:= 
+240718195246840 Response.sendData()	INFO: RESPUESTAGET /arch.html HTTP/1.1 
+240718195246847 Response.sendData()	INFO: (0) response: [HTTP/1.1 200 OK, Content-Type: text/html, ClaseCC8: Alumnos, Content-Length: 18, , <b>Hola Mundo!</b>]
+240718195246847 Response.sendData()	INFO: (0) request: GET /arch.html HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || Cache-Control: max-age=0 || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || sec-ch-ua-platform: "Windows" || Upgrade-Insecure-Requests: 1 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: none || Sec-Fetch-Mode: navigate || Sec-Fetch-User: ?1 || Sec-Fetch-Dest: document || Accept-Encoding: gzip, deflate, br, zstd || 
+240718195246857 ThreadServer.run()	INFO: (0) > Thread :: Time: 8149 milliseconds
+240718195246858 ThreadServer.run()	INFO: (0) > END #
+240718195251865 ThreadServer.run()	INFO: (0) > Thread waiting for new client....

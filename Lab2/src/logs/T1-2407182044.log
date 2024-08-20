@@ -1,0 +1,26 @@
+240718204419518 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718204433957 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718204433961 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718204433961 Request.getData()	INFO: MENSAJE:= 
+240718204433966 Response.sendData()	INFO: request: 0GET /favicon.ico HTTP/1.1 
+240718204433966 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240718204433966 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240718204433966 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240718204434095 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240718204434144 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240718204434257 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240718204434363 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240718204434460 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240718204434566 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240718204434690 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240718204434741 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240718204434860 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240718204434972 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/socket.png 
+240718204435036 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240718204435092 Response.sendData()	INFO: request: 15 
+240718204435158 Response.sendData()	INFO: RESPUESTAGET /favicon.ico HTTP/1.1 
+240718204435312 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: image/x-icon, ClaseCC8: Alumnos, Content-Length: 0, , ]
+240718204435424 Response.sendData()	INFO: (1) request: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/socket.png || Accept-Encoding: gzip, deflate, br, zstd || 
+240718204435509 ThreadServer.run()	INFO: (1) > Thread :: Time: 1539 milliseconds
+240718204435584 ThreadServer.run()	INFO: (1) > END #
+240718204440642 ThreadServer.run()	INFO: (1) > Thread waiting for new client....

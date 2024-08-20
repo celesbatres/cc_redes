@@ -1,0 +1,76 @@
+240718215304590 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718215304722 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718215304722 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718215304722 Request.getData()	INFO: MENSAJE:= 
+240718215304722 Response.sendData()	INFO: request: 0GET /favicon.ico HTTP/1.1 
+240718215304722 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240718215304728 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240718215304728 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240718215304728 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240718215304728 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240718215304728 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240718215304728 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240718215304736 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240718215304736 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240718215304738 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240718215304738 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240718215304738 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240718215304738 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/b.html 
+240718215304738 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240718215304738 Response.sendData()	INFO: request: 15 
+240718215304738 Response.sendData()	INFO: RESPUESTAGET /favicon.ico HTTP/1.1 
+240718215304738 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: image/x-icon, ClaseCC8: Alumnos, Content-Length: 0, , ]
+240718215304738 Response.sendData()	INFO: (1) request: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/b.html || Accept-Encoding: gzip, deflate, br, zstd || 
+240718215304744 ThreadServer.run()	INFO: (1) > Thread :: Time: 22 milliseconds
+240718215304744 ThreadServer.run()	INFO: (1) > END #
+240718215309750 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718215309750 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718215309750 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718215309750 Request.getData()	INFO: MENSAJE:= 
+240718215309750 Response.sendData()	INFO: request: 0GET /favicon.ico HTTP/1.1 
+240718215309750 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240718215309750 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240718215309750 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240718215309750 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240718215309758 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240718215309758 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240718215309758 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240718215309758 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240718215309758 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240718215309758 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240718215309758 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240718215309758 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240718215309758 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/b.html 
+240718215309766 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240718215309766 Response.sendData()	INFO: request: 15 
+240718215309766 Response.sendData()	INFO: RESPUESTAGET /favicon.ico HTTP/1.1 
+240718215309766 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: image/x-icon, ClaseCC8: Alumnos, Content-Length: 0, , ]
+240718215309766 Response.sendData()	INFO: (1) request: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/b.html || Accept-Encoding: gzip, deflate, br, zstd || 
+240718215309774 ThreadServer.run()	INFO: (1) > Thread :: Time: 24 milliseconds
+240718215309775 ThreadServer.run()	INFO: (1) > END #
+240718215314783 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
+240718215314783 ThreadServer.run()	INFO: (1) > Thread Accepting connection >
+240718215314783 Request.getData()	INFO: MENSAJE:[15] /favicon.ico
+240718215314783 Request.getData()	INFO: MENSAJE:= 
+240718215314783 Response.sendData()	INFO: request: 0GET /favicon.ico HTTP/1.1 
+240718215314783 Response.sendData()	INFO: request: 1 Host: localhost:1000 
+240718215314783 Response.sendData()	INFO: request: 2 Connection: keep-alive 
+240718215314783 Response.sendData()	INFO: request: 3 sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" 
+240718215314791 Response.sendData()	INFO: request: 4 sec-ch-ua-mobile: ?0 
+240718215314792 Response.sendData()	INFO: request: 5 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 
+240718215314792 Response.sendData()	INFO: request: 6 sec-ch-ua-platform: "Windows" 
+240718215314792 Response.sendData()	INFO: request: 7 Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 
+240718215314792 Response.sendData()	INFO: request: 8 Sec-GPC: 1 
+240718215314792 Response.sendData()	INFO: request: 9 Accept-Language: en-US,en 
+240718215314792 Response.sendData()	INFO: request: 10 Sec-Fetch-Site: same-origin 
+240718215314799 Response.sendData()	INFO: request: 11 Sec-Fetch-Mode: no-cors 
+240718215314799 Response.sendData()	INFO: request: 12 Sec-Fetch-Dest: image 
+240718215314801 Response.sendData()	INFO: request: 13 Referer: http://localhost:1000/b.html 
+240718215314801 Response.sendData()	INFO: request: 14 Accept-Encoding: gzip, deflate, br, zstd 
+240718215314801 Response.sendData()	INFO: request: 15 
+240718215314801 Response.sendData()	INFO: RESPUESTAGET /favicon.ico HTTP/1.1 
+240718215314804 Response.sendData()	INFO: (1) response: [HTTP/1.1 200 OK, Content-Type: image/x-icon, ClaseCC8: Alumnos, Content-Length: 0, , ]
+240718215314804 Response.sendData()	INFO: (1) request: GET /favicon.ico HTTP/1.1 || Host: localhost:1000 || Connection: keep-alive || sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126" || sec-ch-ua-mobile: ?0 || User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 || sec-ch-ua-platform: "Windows" || Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8 || Sec-GPC: 1 || Accept-Language: en-US,en || Sec-Fetch-Site: same-origin || Sec-Fetch-Mode: no-cors || Sec-Fetch-Dest: image || Referer: http://localhost:1000/b.html || Accept-Encoding: gzip, deflate, br, zstd || 
+240718215314806 ThreadServer.run()	INFO: (1) > Thread :: Time: 23 milliseconds
+240718215314810 ThreadServer.run()	INFO: (1) > END #
+240718215319812 ThreadServer.run()	INFO: (1) > Thread waiting for new client....
