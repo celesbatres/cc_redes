@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.math.BigInteger;
@@ -12,11 +13,17 @@ import java.util.logging.Logger;
 
 public class ThreadServer implements Runnable {
     private Integer nThreadServer;
+
     byte[] input = new byte[65535];
     private Integer delay;
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMddHHmm");
     private DatagramSocket socket;
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMddHHmm");
     static Logger LOGGER = Logger.getLogger("Server");
+
+    private static final int A = 1;
+    private static final int CNAME = 5;
+    private static final int TXT = 16;
+    private static final int AAAA = 28;
 
     static HashMap<String, String> listIPv4 = new HashMap<>();
     static HashMap<String, String> listIPv6 = new HashMap<>();
@@ -73,30 +80,26 @@ public class ThreadServer implements Runnable {
                 LOGGER.info("HEXADECIMAL: " + bytesToHex(receivePacket.getData(),
                         receivePacket.getLength()));
                 LOGGER.info("Consulta DNS al dominio: " + extractDomainName(receivePacket.getData()));
-//
-//                InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
-//                DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,
-//                        53);
-//                socket.send(dnsPacket);
-//
-//                socket.setSoTimeout(2000);  // Timeout en milisegundos
-//                try {
-//                    socket.receive(receivePacket);
-//                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),
-//                            receivePacket.getLength()));
-//                    // Envía la respuesta de vuelta al cliente
-//                    socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),
-//                            receivePacket.getAddress(),
-//                            receivePacket.getPort()));
-//                } catch (SocketTimeoutException e) {
-//                    System.out.println("Timeout esperando la respuesta del servidor DNS.");
-//                }
 
+                InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
+                DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,
+                        53);
+                socket.send(dnsPacket);
 
-                byte[] response = handleQuery(receivePacket.getData(), receivePacket.getLength());
-                DatagramPacket responsePacket = new DatagramPacket(response, response.length, receivePacket.getAddress(),
-                        receivePacket.getPort());
-                socket.send(responsePacket);
+                socket.setSoTimeout(2000);
+                try {
+                    socket.receive(receivePacket);
+                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),
+                            receivePacket.getLength()));
+                    LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(receivePacket.getData(),
+                            receivePacket.getLength()));
+                    // Envía la respuesta de vuelta al cliente
+                    socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),
+                            receivePacket.getAddress(),
+                            receivePacket.getPort()));
+                } catch (SocketTimeoutException e) {
+                    System.out.println("Timeout esperando la respuesta del servidor DNS.");
+                }
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -127,9 +130,6 @@ public class ThreadServer implements Runnable {
     //    Crear un cliente udp, -- iterativo: que primero mande a preguntar a los root A-M, esto regresa un TLD, que es
 //    el servidor que ya sabemos quien tiene la información que estamos pidiendo
     private static void iterative(byte[] query, int length) throws IOException {
-//        Buscar en la lista de roots
-
-//        Formar un datagram que envie y vea la respuesta de los roots
         int port = 53;
         DatagramSocket socket = new DatagramSocket(port);
         byte[] input = new byte[65535];
@@ -151,26 +151,7 @@ public class ThreadServer implements Runnable {
             throw new RuntimeException(e);
         }
 
-//        rootIPv4.forEach((k, v) -> {
-//            try {
-//                DatagramPacket packet = new DatagramPacket(query, length, InetAddress.getByName(v), port);
-//                ds.send(packet);
-//
-//                byte[] respuesta = new byte[1024];
-//                DatagramPacket receivePacket = new DatagramPacket(respuesta, respuesta.length);
-//
-//                ds.receive(receivePacket);
-//
-//                String respuestaS = new String(receivePacket.getData(), 0, receivePacket.getLength());
-//                System.out.println("> " + v + "server " + "[" + LocalDate.now() + " " + LocalTime.now() + "] UDP: " + respuestaS);
-//                ds.close();
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//        });
     }
-//
-
 
     private static byte[] handleQuery(byte[] query, int queryLength) {
         // Formar una respuesta - Algunos campos son iguales a la consulta
@@ -235,31 +216,24 @@ public class ThreadServer implements Runnable {
         int qType = getQueryType(query);
         String strResult = "";
 
-        switch (qType){
-            case 1:
+        switch (qType) {
+            case A:
                 strResult = listIPv4.get(domainName);
-        }
-        if (qType == 1) {
-            if(listIPv4.containsKey(domainName)) {
-                strResult = listIPv4.get(domainName);
-            }
-        }else if(qType == 5) {
-            if(listCNAME.containsKey(domainName)) {
+                break;
+            case CNAME:
                 strResult = listCNAME.get(domainName);
-            }
-        }else if(qType == 16) {
-            if(listTXT.containsKey(domainName)) {
+                break;
+            case TXT:
                 strResult = listTXT.get(domainName);
-            }
-        }else if(qType == 28) {
-            if(listIPv6.containsKey(domainName)) {
+                break;
+            case AAAA:
                 strResult = listIPv6.get(domainName);
-            }
+                break;
         }
 
+        if (!strResult.equals("")){
 
-//        No logró resolver internamente
-        if(strResult.equals("")) {
+        }else{
 
 //          1. Root Server
 
@@ -276,34 +250,27 @@ public class ThreadServer implements Runnable {
         return response;
     }
 
-//
-
-    // 1 - A; 5 - CNAME; 16- TXT; 28 - AAAA
     public static int getQueryType(byte[] query) {
         ByteBuffer buffer = ByteBuffer.wrap(query);
-
-        // Desplazarse a la posición del tipo de consulta (2 bytes después del nombre del dominio)
-        int position = getDomainNameLength(buffer) + 12; // Salta el encabezado DNS (12 bytes) y el nombre del dominio
+        int position = getDomainNameLength(buffer) + 12;
         buffer.position(position);
-
-        // Leer el tipo de consulta (2 bytes)
-        return buffer.getShort() & 0xFFFF; // Asegurar que sea unsigned
+        return buffer.getShort() & 0xFFFF;
     }
 
     private static int getDomainNameLength(ByteBuffer buffer) {
         int length = 0;
         int labelLength;
 
-        while ((labelLength = buffer.get()) != 0) { // Cada etiqueta termina en 0x00
+        while ((labelLength = buffer.get()) != 0) {
             length += labelLength + 1;
             buffer.position(buffer.position() + labelLength);
         }
-
-        return length + 1; // Suma 1 para el byte de terminación (0x00)
+        return length + 1;
     }
+
     private static String extractDomainName(byte[] query) {
         StringBuilder domainName = new StringBuilder();
-        int position = 12; // La consulta comienza después del header
+        int position = 12;
         while (query[position] != 0) {
             int length = query[position++];
             for (int i = 0; i < length; i++) {
@@ -311,10 +278,11 @@ public class ThreadServer implements Runnable {
             }
             domainName.append('.');
         }
-        // Eliminar el último punto
         if (domainName.length() > 0) {
             domainName.setLength(domainName.length() - 1);
         }
         return domainName.toString();
     }
+
+
 }
