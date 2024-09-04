@@ -81,25 +81,25 @@ public class ThreadServer implements Runnable {
                         receivePacket.getLength()));
                 LOGGER.info("Consulta DNS al dominio: " + extractDomainName(receivePacket.getData()));
 
-                InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
-                DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,
-                        53);
-                socket.send(dnsPacket);
-
-                socket.setSoTimeout(2000);
-                try {
-                    socket.receive(receivePacket);
-                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),
-                            receivePacket.getLength()));
-                    LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(receivePacket.getData(),
-                            receivePacket.getLength()));
-                    // Envía la respuesta de vuelta al cliente
-                    socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),
-                            receivePacket.getAddress(),
-                            receivePacket.getPort()));
-                } catch (SocketTimeoutException e) {
-                    System.out.println("Timeout esperando la respuesta del servidor DNS.");
-                }
+//                InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
+//                DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,
+//                        53);
+//                socket.send(dnsPacket);
+//
+//                socket.setSoTimeout(2000);
+//                try {
+//                    socket.receive(receivePacket);
+//                    LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),
+//                            receivePacket.getLength()));
+//                    LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(receivePacket.getData(),
+//                            receivePacket.getLength()));
+//                    // Envía la respuesta de vuelta al cliente
+//                    socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),
+//                            receivePacket.getAddress(),
+//                            receivePacket.getPort()));
+//                } catch (SocketTimeoutException e) {
+//                    System.out.println("Timeout esperando la respuesta del servidor DNS.");
+//                }
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -153,7 +153,8 @@ public class ThreadServer implements Runnable {
 
     }
 
-    private static byte[] handleQuery(byte[] query, int queryLength) {
+    private static byte[] handleQuery(DatagramPacket receivePacket, DatagramSocket socket, byte[] query,
+                                      int queryLength) throws IOException {
         // Formar una respuesta - Algunos campos son iguales a la consulta
 
         byte[] response = new byte[512];
@@ -191,6 +192,7 @@ public class ThreadServer implements Runnable {
         response[responseIndex++] = (byte) 0xc0;
         response[responseIndex++] = 0x0c;
 
+        int qType = getQueryType(query);
         // Tipo de registro: A (0x0001)
         response[responseIndex++] = 0x00;
         response[responseIndex++] = 0x01;
@@ -205,22 +207,27 @@ public class ThreadServer implements Runnable {
         response[responseIndex++] = 0x01;
         response[responseIndex++] = 0x2c;
 
-        // Longitud de datos: 4 bytes (IPv4 address)
-        response[responseIndex++] = 0x00;
-        response[responseIndex++] = 0x04;
-
         // Dirección IP (por ejemplo, 192.168.1.1)
         String domainName = extractDomainName(query);
 //      Si se encuentra dentro de mis registros
 //        Dependiendo del QTYPE será la lista en la que lo va a buscar
-        int qType = getQueryType(query);
         String strResult = "";
 
         switch (qType) {
             case A:
+                //Longitud: 4 bytes (IPv4 address)
+                response[responseIndex++] = 0x00;
+                response[responseIndex++] = 0x04;
                 strResult = listIPv4.get(domainName);
+                String[] arrResult = strResult.split(".");
+                for (int i = 0; i < arrResult.length; i++) {
+                    response[responseIndex++] = (byte) Integer.parseInt(arrResult[i]);
+                }
                 break;
             case CNAME:
+                //Longitud: 4 bytes (IPv4 address)
+                response[responseIndex++] = 0x00;
+                response[responseIndex++] = 0x04;
                 strResult = listCNAME.get(domainName);
                 break;
             case TXT:
@@ -231,12 +238,43 @@ public class ThreadServer implements Runnable {
                 break;
         }
 
-        if (!strResult.equals("")){
-
-        }else{
+        if (strResult.equals("")){
 
 //          1. Root Server
+            InetAddress dnsServer = InetAddress.getByName(DNS_SERVERS[0]);
+            DatagramPacket dnsPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), dnsServer,
+                    53);
+            socket.send(dnsPacket);
 
+            socket.setSoTimeout(2000);
+            try {
+                socket.receive(receivePacket);
+                LOGGER.info("Respuesta del Proveedor: " + bytesToHex(receivePacket.getData(),
+                        receivePacket.getLength()));
+                LOGGER.info("Respuesta del Proveedor - 2    : " + filterPrintableChars(receivePacket.getData(),
+                        receivePacket.getLength()));
+
+                String tldServer = extractResponse();
+
+                InetAddress tldServerIp = InetAddress.getByName(tldServer);
+
+                DatagramPacket tldPacket = new DatagramPacket(receivePacket.getData(), receivePacket.getLength(), tldServerIp, 53);
+                socket.send(tldPacket);
+                socket.setSoTimeout(2000);
+
+                try{
+                    socket.receive(receivePacket);
+                }catch (SocketTimeoutException e) {
+                    System.out.println("Timeout esperando la respuesta del TLD.");
+                }
+//                socket.send(new DatagramPacket(receivePacket.getData(), receivePacket.getLength(),
+//                        receivePacket.getAddress(),
+//                        receivePacket.getPort()));
+//
+
+            } catch (SocketTimeoutException e) {
+                System.out.println("Timeout esperando la respuesta del servidor DNS.");
+            }
 //          2. TLD
 
 //          3. Autoritativo
@@ -250,10 +288,38 @@ public class ThreadServer implements Runnable {
         return response;
     }
 
+
+    // Saltarse el header, saltarse la respuesta, dependiendo que tenga saltarse lo que tenga
+    public static String extractResponse(byte[] query) {
+        StringBuilder domainName = new StringBuilder();
+        int position = 12;
+        while (query[position] != 0) {
+            position++;
+//            int length = query[position++];
+//            for (int i = 0; i < length; i++) {
+//                position++;
+////                domainName.append((char) query[position++]);
+//            }
+////            domainName.append('.');
+        }
+        // QTYPE+QCLASS
+        position += 4;
+        // Checar cantidad de responses
+        while (query[position] != 0) {
+
+        }
+
+        if (domainName.length() > 0) {
+            domainName.setLength(domainName.length() - 1);
+        }
+        return domainName.toString();
+    }
+
     public static int getQueryType(byte[] query) {
         ByteBuffer buffer = ByteBuffer.wrap(query);
         int position = getDomainNameLength(buffer) + 12;
         buffer.position(position);
+//        unsigned
         return buffer.getShort() & 0xFFFF;
     }
 
@@ -284,5 +350,8 @@ public class ThreadServer implements Runnable {
         return domainName.toString();
     }
 
+    private static String extractAuthoritative(byte[] query) {
+        StringBuilder authoritative = new StringBuilder();
+    }
 
 }
